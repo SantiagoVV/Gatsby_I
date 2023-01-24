@@ -4,21 +4,20 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Especie from "../components/especie";
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Página de Inicio</h1>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <StaticImage
-        src="../images/gatsby-astronaut.png"
-        alt="gatsby astronaut"
+        src="../images/gato_inicio.png"
+        alt="gatito"
       />
+      <Especie name="Gato"/>
     </div>
-    <p><Link to="/page-2/">Go to page 2</Link></p>
-    <p><Link to="/using-typescript/">Go to "Using TypeScript"</Link></p>
+    <p><Link to="/page-2/">Ir a pagina secundaria</Link></p>
   </Layout>
 )
 
